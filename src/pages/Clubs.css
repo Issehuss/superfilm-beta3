@@ -2,7 +2,7 @@
    Root cinematic background
    =========================== */
 .clubs2 {
-  --brand-yellow: 241 183 7;
+  --brand-yellow: 250 204 21;
   /* Let the app shell background show through so the Clubs page matches the nav */
   background: transparent;
   color: #e5e5e5;

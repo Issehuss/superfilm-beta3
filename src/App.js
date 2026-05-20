@@ -606,7 +606,7 @@ function MainShell() {
             >
               <div className="flex items-center gap-2">
                 <span>SuperFilm</span>
-                <span className="text-[9px] sm:text-[10px] uppercase tracking-[0.18em] text-yellow-300/90 border border-yellow-300/30 rounded-full px-1.5 py-[2px] sm:px-2 sm:py-[3px] bg-yellow-300/10">
+                <span className="text-[9px] sm:text-[10px] uppercase tracking-[0.18em] text-yellow-400/90 border border-yellow-300/30 rounded-full px-1.5 py-[2px] sm:px-2 sm:py-[3px] bg-yellow-300/10">
                   Beta
                 </span>
               </div>
@@ -677,7 +677,7 @@ function MainShell() {
                   onClick={() => setSearchMode("films")}
                   className={`text-[11px] px-3 py-1 rounded-full transition ${
                     searchMode === "films"
-                      ? "bg-yellow-400 text-black shadow-[0_0_12px_rgba(255,215,0,0.35)]"
+                      ? "bg-yellow-400 text-black shadow-[0_0_12px_rgba(250,204,21,0.35)]"
                       : "text-zinc-300 hover:text-white"
                   }`}
                   aria-pressed={searchMode === "films"}
@@ -689,7 +689,7 @@ function MainShell() {
                   onClick={() => setSearchMode("users")}
                   className={`text-[11px] px-3 py-1 rounded-full transition ${
                     searchMode === "users"
-                      ? "bg-yellow-400 text-black shadow-[0_0_12px_rgba(255,215,0,0.35)]"
+                      ? "bg-yellow-400 text-black shadow-[0_0_12px_rgba(250,204,21,0.35)]"
                       : "text-zinc-300 hover:text-white"
                   }`}
                   aria-pressed={searchMode === "users"}

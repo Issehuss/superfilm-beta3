@@ -6,7 +6,7 @@
  *  =============================== */
 
 export const CORE_PALETTE = {
-  yellow: '#FFD54A',
+  yellow: '#FACC15',
   white: '#FFFFFF',
   grey: '#B5B5B5',
 };
@@ -70,10 +70,10 @@ export const GLOW_TOKENS = [
     label: 'Starlight Gold',
     pack: 'pro',              // premium
     kind: 'glow',
-    color: '#FFD700',
+    color: '#FACC15',
     intensity: 'high',
     supports: { color: true, intensity: true, blend: true, animated: true },
-    _legacy: { border: '3px solid #FFD700', glow: '0 0 16px #FFD700' },
+    _legacy: { border: '3px solid #FACC15', glow: '0 0 16px #FACC15' },
   },
   {
     id: 'glow-red',
@@ -99,7 +99,7 @@ export const GLOW_TOKENS = [
 
 export const DEFAULT_GLOBAL_STYLE = {
   variantId: 'glow-gold',     // pick your preferred default; can be 'glow-blue' if you want free default
-  color: '#FFD700',
+  color: '#FACC15',
   intensity: 'medium',
   blend: 'normal',            // 'normal' | 'soft' | 'screen'
 };

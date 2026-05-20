@@ -41,7 +41,7 @@ export const PROFILE_THEMES = [
       name: "Golden Noir",
       premium: true,
       vars: {
-        "--sf-accent": "#f59e0b",
+        "--sf-accent": "#FACC15",
         "--sf-card-bg": "rgba(12,12,12,0.7)",
         "--sf-outline": "rgba(245,158,11,0.18)",
         "--sf-glow-from": "rgba(245,158,11,0.14)",

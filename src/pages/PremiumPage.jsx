@@ -29,11 +29,11 @@ export default function PremiumPage() {
           className="absolute inset-0 pointer-events-none opacity-30"
           style={{
             backgroundImage:
-              "radial-gradient(ellipse at top, rgba(255,215,0,0.18), transparent 60%)",
+              "radial-gradient(ellipse at top, rgba(250,204,21,0.18), transparent 60%)",
           }}
         />
         <div className="mx-auto max-w-6xl px-6 pt-16 pb-10">
-          <div className="inline-flex items-center rounded-2xl bg-gradient-to-br from-yellow-300 to-amber-500 px-4 py-2 font-semibold text-black shadow-[0_0_30px_rgba(255,200,0,0.35)] ring-1 ring-yellow-300/60">
+          <div className="inline-flex items-center rounded-2xl bg-gradient-to-br from-yellow-400 to-yellow-400 px-4 py-2 font-semibold text-black shadow-[0_0_30px_rgba(250,204,21,0.35)] ring-1 ring-yellow-400/60">
             Director’s Cut
           </div>
           <h1 className="mt-6 text-4xl md:text-5xl font-extrabold tracking-tight">
@@ -47,7 +47,7 @@ export default function PremiumPage() {
             {isPremium ? (
               <button
                 onClick={() => navigate("/settings/premium")}
-                className="inline-flex items-center justify-center rounded-2xl px-6 py-3 font-semibold text-black bg-gradient-to-br from-yellow-300 to-amber-500 shadow-[0_0_30px_rgba(255,200,0,0.35)] ring-1 ring-yellow-300/60 hover:scale-[1.02] transition"
+                className="inline-flex items-center justify-center rounded-2xl px-6 py-3 font-semibold text-black bg-gradient-to-br from-yellow-400 to-yellow-400 shadow-[0_0_30px_rgba(250,204,21,0.35)] ring-1 ring-yellow-400/60 hover:scale-[1.02] transition"
               >
                 Manage subscription
               </button>
@@ -68,7 +68,7 @@ export default function PremiumPage() {
                   });
                 }}
                 disabled={!user || redirecting}
-                className="inline-flex items-center justify-center rounded-2xl px-6 py-3 font-semibold text-black bg-gradient-to-br from-yellow-300 to-amber-500 shadow-[0_0_30px_rgba(255,200,0,0.35)] ring-1 ring-yellow-300/60 hover:scale-[1.02] transition disabled:opacity-50 disabled:cursor-not-allowed"
+                className="inline-flex items-center justify-center rounded-2xl px-6 py-3 font-semibold text-black bg-gradient-to-br from-yellow-400 to-yellow-400 shadow-[0_0_30px_rgba(250,204,21,0.35)] ring-1 ring-yellow-400/60 hover:scale-[1.02] transition disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {redirecting ? "Redirecting..." : "Start 14-day free trial"}
               </button>
@@ -193,11 +193,11 @@ function Feature({ title, children, tone = "amber" }) {
     sky: "from-sky-400 to-cyan-500",
     emerald: "from-emerald-400 to-lime-500",
     violet: "from-violet-400 to-indigo-500",
-    amber: "from-amber-400 to-yellow-500",
+    amber: "from-yellow-400 to-yellow-400",
     indigo: "from-indigo-400 to-blue-500",
     fuchsia: "from-fuchsia-500 to-pink-500",
     teal: "from-teal-400 to-emerald-500",
-    orange: "from-orange-400 to-amber-500",
+    orange: "from-orange-400 to-yellow-400",
     lime: "from-lime-400 to-emerald-500",
     pink: "from-pink-400 to-rose-500",
     cyan: "from-cyan-400 to-sky-500",

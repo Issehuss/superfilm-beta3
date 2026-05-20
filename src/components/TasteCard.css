@@ -1,6 +1,6 @@
 /* Base variables */
 .sf-card {
-    --sf-edge-color: #FFD54A;
+    --sf-edge-color: #FACC15;
     --sf-edge-secondary: transparent;
     --sf-glow-strength: 0.7; /* 0..1 */
     --sf-blend-mode: normal; /* normal | soft | screen (mapped via classes) */

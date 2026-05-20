@@ -251,7 +251,7 @@ const TicketCard = ({ title, tagline, location, dateLabel, onClick }) => (
           className="absolute -left-4 top-0 bottom-0 w-4 hidden md:block"
           style={{
             backgroundImage:
-              'repeating-linear-gradient(to bottom, rgba(234,179,8,0.16) 0 6px, rgba(255,255,255,0) 6px 7px)',
+              'repeating-linear-gradient(to bottom, rgba(250,204,21,0.16) 0 6px, rgba(255,255,255,0) 6px 7px)',
           }}
         />
         <div className="mt-1 md:mt-0 bg-white p-2 rounded-md" aria-hidden="true">
@@ -798,7 +798,7 @@ function ClubAddTake({ movie, club, clubRefreshEpoch }) {
         <button
           type="button"
           onClick={() => setOpen(true)}
-          className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-yellow-300 to-amber-500 px-3 py-2 text-sm font-semibold text-black shadow-[0_12px_28px_rgba(250,204,21,0.25)] hover:shadow-[0_14px_34px_rgba(250,204,21,0.35)] focus:outline-none focus:ring-2 focus:ring-yellow-400/70"
+          className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-yellow-400 to-yellow-400 px-3 py-2 text-sm font-semibold text-black shadow-[0_12px_28px_rgba(250,204,21,0.25)] hover:shadow-[0_14px_34px_rgba(250,204,21,0.35)] focus:outline-none focus:ring-2 focus:ring-yellow-400/70"
         >
           {hasExisting ? "Edit your take" : "Add your take"}
         </button>
@@ -3100,7 +3100,7 @@ const submitClubReport = async () => {
 
 {/* Partner-only moderation UI; old PointsReviewPanel.jsx is now a no-op */}
 {isPartner && (
-  <div className="mx-6 mt-3 rounded-xl border border-amber-400/30 bg-amber-500/10">
+  <div className="mx-6 mt-3 rounded-xl border border-yellow-400/30 bg-yellow-400/10">
     <button
       type="button"
       onClick={() => setPartnerToolsOpen((v) => !v)}
@@ -3112,7 +3112,7 @@ const submitClubReport = async () => {
     {partnerToolsOpen && (
       <div className="px-4 pb-4 space-y-3">
         {showLazy ? (
-          <Suspense fallback={<div className="text-xs text-amber-100/80">Loading tools…</div>}>
+          <Suspense fallback={<div className="text-xs text-yellow-400/80">Loading tools…</div>}>
             <PartnerPointsReviewPanel clubId={club.id} />
           </Suspense>
         ) : null}
@@ -3123,7 +3123,7 @@ const submitClubReport = async () => {
           </Suspense>
         ) : null}
 
-        <div className="inline-flex items-center gap-2 rounded-full bg-amber-500/10 border border-amber-400/40 px-3 py-1 text-xs text-amber-100">
+        <div className="inline-flex items-center gap-2 rounded-full bg-yellow-400/10 border border-yellow-400/40 px-3 py-1 text-xs text-yellow-400">
           <span className="w-2 h-2 rounded-full bg-amber-300" aria-hidden />
           Signed in as SuperFilm Partner
         </div>

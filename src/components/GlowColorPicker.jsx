@@ -46,10 +46,10 @@ export default function GlowColorPicker({
       id: t.id || t.className || `token-${i}`,
       label: t.label || t.name || t.className || "Style",
       className: t.className || null,  // when you have CSS glow classes
-      hex: t.hex || t.color || "#FFD54A",
+      hex: t.hex || t.color || "#FACC15",
       kind: t.kind || t.type || "glow", // "glow" | "outline" | "pattern" | "duotone"
       pack: t.pack || (t.premium ? "pro" : "core"), // "pro" locks for non-premium
-      color: t.color || t.hex || "#FFD54A",
+      color: t.color || t.hex || "#FACC15",
       secondary: t.secondary,          // for duotone styles
       intensity: t.intensity || "medium",
     }));
@@ -101,7 +101,7 @@ export default function GlowColorPicker({
     onChangeTokens({
       ...value,
       variantId: t.id,
-      color: value?.color || t.color || "#FFD54A",
+      color: value?.color || t.color || "#FACC15",
       secondary: value?.secondary || t.secondary || undefined,
       intensity: value?.intensity || t.intensity || "medium",
       blend: value?.blend || "normal",
@@ -145,7 +145,7 @@ export default function GlowColorPicker({
         {tokensByTab.map((t) => {
           const isActive = value?.variantId === t.id;
           const locked = t.pack === "pro" && !isPremium;
-          const edgeColor = (isActive ? value?.color : t.color) || "#FFD54A";
+          const edgeColor = (isActive ? value?.color : t.color) || "#FACC15";
           const edgeSecondary = (isActive ? value?.secondary : t.secondary) || "transparent";
 
           return (
@@ -209,7 +209,7 @@ export default function GlowColorPicker({
               <span>Custom</span>
               <input
                 type="color"
-                value={value?.color || "#FFD54A"}
+                value={value?.color || "#FACC15"}
                 onChange={(e) => update({ color: e.target.value })}
                 className="h-7 w-10 bg-transparent"
               />

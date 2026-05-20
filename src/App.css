@@ -84,13 +84,13 @@ html, body, #root {
 }
 
 .sf-toggle:hover:not(.opacity-50) {
-  box-shadow: 0 0 10px rgba(255, 215, 0, 0.25);
+  box-shadow: 0 0 10px rgba(250, 204, 21, 0.25);
 }
 
 .sf-toggle-on {
-  background: linear-gradient(to right, #ffd500, #b49000);
+  background: linear-gradient(to right, #facc15, #facc15);
   border-color: rgb(var(--brand-yellow));
-  box-shadow: 0 0 20px rgba(255, 215, 0, 0.45);
+  box-shadow: 0 0 20px rgba(250, 204, 21, 0.45);
 }
 
 .sf-toggle-handle {

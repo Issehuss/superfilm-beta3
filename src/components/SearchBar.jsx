@@ -17,7 +17,7 @@ function SearchBar({ placeholder = "Search films..." }) {
     <div
       className={[
         "transition-all duration-200 ease-out",
-        focused ? "scale-[1.02] shadow-[0_0_0_2px_rgba(234,179,8,0.35)]" : "scale-100",
+        focused ? "scale-[1.02] shadow-[0_0_0_2px_rgba(250,204,21,0.35)]" : "scale-100",
       ].join(" ")}
     >
       <input

@@ -126,7 +126,7 @@ useEffect(() => {
     if (s === "active" || s === "trialing")
       return <span className={`${base} bg-emerald-500/10 text-emerald-300 ring-emerald-400/30`}>{s}</span>;
     if (s === "past_due")
-      return <span className={`${base} bg-amber-500/10 text-amber-300 ring-amber-400/30`}>past due</span>;
+      return <span className={`${base} bg-yellow-400/10 text-yellow-400 ring-yellow-400/30`}>past due</span>;
     if (["canceled","unpaid","incomplete","incomplete_expired","paused"].includes(s))
       return <span className={`${base} bg-zinc-700/40 text-zinc-300 ring-white/10`}>{s}</span>;
     return <span className={`${base} bg-zinc-700/40 text-zinc-300 ring-white/10`}>{s}</span>;
@@ -172,10 +172,10 @@ useEffect(() => {
               className={[
                 "inline-flex items-center justify-center rounded-2xl px-4 py-2 font-semibold",
                 "text-black",
-                "bg-gradient-to-br from-yellow-300 to-amber-500",
-                "shadow-[0_0_30px_rgba(255,200,0,0.35)] hover:shadow-[0_0_42px_rgba(255,200,0,0.55)]",
+                "bg-gradient-to-br from-yellow-400 to-yellow-400",
+                "shadow-[0_0_30px_rgba(250,204,21,0.35)] hover:shadow-[0_0_42px_rgba(250,204,21,0.55)]",
                 "transition-all duration-300 hover:scale-[1.02]",
-                "ring-1 ring-yellow-300/60 hover:ring-yellow-200"
+                "ring-1 ring-yellow-400/60 hover:ring-yellow-200"
               ].join(" ")}
             >
               Go Premium
@@ -282,7 +282,7 @@ useEffect(() => {
           <button
             type="button"
             onClick={openBillingPortal}
-            className="underline underline-offset-2 hover:text-amber-100"
+            className="underline underline-offset-2 hover:text-yellow-400"
             
           >
             the billing portal
@@ -292,7 +292,7 @@ useEffect(() => {
             href={DIRECT_PORTAL_URL}
             target="_blank"
             rel="noreferrer"
-            className="underline underline-offset-2 hover:text-amber-100"
+            className="underline underline-offset-2 hover:text-yellow-400"
           >
             open the Stripe portal directly
           </a>.

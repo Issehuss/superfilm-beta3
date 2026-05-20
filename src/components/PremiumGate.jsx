@@ -13,8 +13,8 @@ export default function PremiumGate({ children, fallbackText = "This feature is 
         to="/premium"
         className={[
           "mt-3 inline-flex items-center justify-center rounded-2xl px-4 py-2 font-semibold",
-          "text-black bg-gradient-to-br from-yellow-300 to-amber-500",
-          "shadow-[0_0_30px_rgba(255,200,0,0.35)] ring-1 ring-yellow-300/60",
+          "text-black bg-gradient-to-br from-yellow-400 to-yellow-400",
+          "shadow-[0_0_30px_rgba(250,204,21,0.35)] ring-1 ring-yellow-400/60",
           "transition hover:scale-[1.02]"
         ].join(" ")}
       >

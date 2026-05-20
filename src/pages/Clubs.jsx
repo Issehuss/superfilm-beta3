@@ -1450,7 +1450,7 @@ export default function Clubs() {
         <section className="pb-14">
           <Link
             to="/events"
-            className="group block rounded-2xl overflow-hidden border border-zinc-800 bg-zinc-900/40 shadow-xl relative transition-all duration-300 hover:shadow-[0_0_25px_rgba(255,215,0,0.35)] hover:border-[rgb(var(--brand-yellow))]/60"
+            className="group block rounded-2xl overflow-hidden border border-zinc-800 bg-zinc-900/40 shadow-xl relative transition-all duration-300 hover:shadow-[0_0_25px_rgba(250,204,21,0.35)] hover:border-[rgb(var(--brand-yellow))]/60"
           >
             <div className="relative h-72 md:h-[24rem] lg:h-[28rem] overflow-hidden">
               <img

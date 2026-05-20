@@ -18,7 +18,7 @@ import { TASTE_QUESTIONS } from "../constants/tasteQuestions";
 
 // Basic (free) + premium palettes
 const BASIC_COLORS = [
-  "#ef4444", "#f97316", "#f59e0b", "#eab308",
+  "#ef4444", "#f97316", "#FACC15", "#FACC15",
   "#22c55e", "#06b6d4", "#3b82f6", "#8b5cf6",
   "#a855f7", "#ec4899",
 ];
@@ -95,7 +95,7 @@ function CardEditorModal({ initial, onClose, onSave, isPremium }) {
   const [answer, setAnswer] = useState(initial?.answer || "");
   const [question, setQuestion] = useState(initial?.question || "");
   const [style, setStyle] = useState(
-    initial?.style || { mode: "glow", glow: "#f59e0b", outline: "#f59e0b" }
+    initial?.style || { mode: "glow", glow: "#FACC15", outline: "#FACC15" }
   );
 
   const canSave =
@@ -122,7 +122,7 @@ function CardEditorModal({ initial, onClose, onSave, isPremium }) {
           <a
             href="/premium"
             onClick={()=>toast.dismiss(t.id)}
-            className="inline-flex items-center justify-center rounded-2xl px-3 py-1.5 font-semibold text-black bg-gradient-to-br from-yellow-300 to-amber-500 ring-1 ring-yellow-300/60 transition hover:scale-[1.02]"
+            className="inline-flex items-center justify-center rounded-2xl px-3 py-1.5 font-semibold text-black bg-gradient-to-br from-yellow-400 to-yellow-400 ring-1 ring-yellow-300/60 transition hover:scale-[1.02]"
           >
             Upgrade to unlock
           </a>
@@ -132,7 +132,7 @@ function CardEditorModal({ initial, onClose, onSave, isPremium }) {
   }
 
   const isOutline = style?.mode === "outline";
-  const colorNow  = (isOutline ? style?.outline : style?.glow) || "#f59e0b";
+  const colorNow  = (isOutline ? style?.outline : style?.glow) || "#FACC15";
 
   return (
     <div className="fixed inset-0 z-[110] flex items-center justify-center bg-black/70 p-4">
@@ -320,7 +320,7 @@ function CardEditorModal({ initial, onClose, onSave, isPremium }) {
 
 function TasteCardRow({ card, onEdit, onRemove }) {
   const isOutline = card?.style?.mode === "outline";
-  const color = (isOutline ? card?.style?.outline : card?.style?.glow) || "#f59e0b";
+  const color = (isOutline ? card?.style?.outline : card?.style?.glow) || "#FACC15";
 
   return (
     <CardShell outlineColor={color} isOutline={isOutline}>
@@ -365,7 +365,7 @@ export default function TasteCardPicker({
       presetId: p.id,
       question: p.label,
       answer: "",
-      style: { mode: "glow", glow: "#f59e0b", outline: "#f59e0b" },
+      style: { mode: "glow", glow: "#FACC15", outline: "#FACC15" },
     };
     setEditing(draft);
   }
@@ -400,7 +400,7 @@ export default function TasteCardPicker({
                     source: "custom",
                     question: "",
                     answer: "",
-                    style: { mode: "glow", glow: "#f59e0b", outline: "#f59e0b" },
+                    style: { mode: "glow", glow: "#FACC15", outline: "#FACC15" },
                   })
                 }
                 disabled={!canAdd}

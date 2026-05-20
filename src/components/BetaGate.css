@@ -106,7 +106,7 @@
 }
 
 .beta-gate__remember input {
-  accent-color: rgb(234, 179, 8);
+  accent-color: rgb(250, 204, 21);
 }
 
 .beta-gate__error {
@@ -141,7 +141,7 @@
 }
 
 .beta-gate .btn.primary {
-  background: linear-gradient(135deg, #facc15, #f59e0b);
+  background: linear-gradient(135deg, #facc15, #FACC15);
   border-color: #facc15;
   color: #111827;
   box-shadow: 0 12px 28px rgba(250, 204, 21, 0.35);

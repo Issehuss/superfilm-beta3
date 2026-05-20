@@ -575,7 +575,7 @@ function applyBanner(url) {
             <a
               href="/premium"
               onClick={() => toast.dismiss(t.id)}
-              className="inline-flex items-center justify-center rounded-2xl px-3 py-1.5 font-semibold text-black bg-gradient-to-br from-yellow-300 to-amber-500 ring-1 ring-yellow-300/60 transition hover:scale-[1.02]"
+              className="inline-flex items-center justify-center rounded-2xl px-3 py-1.5 font-semibold text-black bg-gradient-to-br from-yellow-400 to-yellow-400 ring-1 ring-yellow-300/60 transition hover:scale-[1.02]"
             >
               Upgrade to Director’s Cut for unlimited tiles
             </a>
@@ -901,7 +901,7 @@ setGlobalGlow(effectiveProfile?.taste_card_style_global || "glow-blue");
         };
       }
       const style = c?.style || {};
-      const hex = style.glow || style.outline || globalGlow || "#f59e0b";
+      const hex = style.glow || style.outline || globalGlow || "#FACC15";
       return {
         id: c.id,
         source: c.source || "preset",
@@ -985,7 +985,7 @@ async function handleSaveAll() {
       const nextTC = (Array.isArray(tasteCards) ? tasteCards : []).slice(0, limit);
       const normalizedTC = nextTC.map((c) => {
         const style = c?.style || {};
-        const hex = style.glow || style.outline || globalGlow || "#f59e0b";
+        const hex = style.glow || style.outline || globalGlow || "#FACC15";
         return {
           id: c.id,
           source: isPremium ? (c.source || "preset") : "preset",
@@ -1901,7 +1901,7 @@ function AddReplaceDialog({ onCancel, onConfirm, initialType = "image" }) {
                 <label className="block text-sm text-zinc-300">Hex</label>
                 <input
                   className="w-full rounded-lg border border-zinc-700 bg-black/40 p-2 text-sm text-white outline-none"
-                  placeholder="#FFD700"
+                  placeholder="#FACC15"
                   value={hex}
                   onChange={(e) => setHex(e.target.value)}
                 />

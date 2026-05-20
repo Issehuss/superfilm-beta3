@@ -14,7 +14,7 @@ import React, { useMemo } from "react";
  * - glowStyle?: 'none' | any
  * - useGlowStyle?: boolean
  */
-const DEFAULT_COLOR = "#f59e0b"; // amber
+const DEFAULT_COLOR = "#FACC15"; // amber
 
 export default function TasteCard({
   question,

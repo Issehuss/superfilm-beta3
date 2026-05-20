@@ -482,7 +482,7 @@ alert("ERROR: " + (e?.message || JSON.stringify(e)));
   const selectShellCls =
     "relative group mt-2 rounded-xl overflow-hidden bg-black/60 border border-white/10 ring-1 ring-yellow-500/25 shadow-[0_18px_45px_rgba(0,0,0,0.55)]";
   const selectGradientOverlay =
-    "pointer-events-none absolute inset-0 bg-gradient-to-r from-yellow-500/10 via-transparent to-amber-400/10 opacity-90 group-hover:opacity-100 transition-opacity duration-200";
+    "pointer-events-none absolute inset-0 bg-gradient-to-r from-yellow-500/10 via-transparent to-yellow-400/10 opacity-90 group-hover:opacity-100 transition-opacity duration-200";
   const selectCls =
     "w-full appearance-none bg-transparent px-5 pr-12 py-3 text-white text-sm tracking-tight outline-none";
   const textAreaCls =
@@ -622,7 +622,7 @@ alert("ERROR: " + (e?.message || JSON.stringify(e)));
                   </p>
                   <div className={selectShellCls}>
                     <div className={selectGradientOverlay} aria-hidden="true" />
-                    <div className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-yellow-300/80">
+                    <div className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-yellow-400/80">
                       <MapPin size={18} />
                     </div>
                     <select
@@ -774,7 +774,7 @@ alert("ERROR: " + (e?.message || JSON.stringify(e)));
                         handleCreate();
                       }}
                       disabled={submitting}
-                      className="bg-yellow-400 text-black font-bold text-lg px-8 py-3 rounded-full shadow-[0_0_40px_rgba(255,220,120,0.4)] hover:scale-105 active:scale-95 transition disabled:opacity-40"
+                      className="bg-yellow-400 text-black font-bold text-lg px-8 py-3 rounded-full shadow-[0_0_40px_rgba(250,204,21,0.4)] hover:scale-105 active:scale-95 transition disabled:opacity-40"
                       aria-label="Create club"
                     >
                       {submitting ? "Projector Warming Up…" : "🎞️ Launch This Film Club"}

@@ -1168,7 +1168,7 @@ function AddReplaceDialog({ onCancel, onConfirm, initialType = "image", isPremiu
                 <label className="block text-sm text-zinc-300">Hex</label>
                 <input
                   className="w-full rounded-lg border border-zinc-700 bg-black/40 p-2 text-sm text-white outline-none"
-                  placeholder="#FFD700"
+                  placeholder="#FACC15"
                   value={hex}
                   onChange={(e) => setHex(e.target.value)}
                 />

@@ -282,7 +282,7 @@ function SpotlightCard({ take, count, index, onToggleClap }) {
 
   // SuperFilm outlined container
   return (
-    <div className="group relative overflow-hidden rounded-2xl border-[4px] border-yellow-500/35 bg-black/30 p-5 shadow-[0_0_20px_rgba(234,179,8,0.1)]">
+    <div className="group relative overflow-hidden rounded-2xl border-[4px] border-yellow-500/35 bg-black/30 p-5 shadow-[0_0_20px_rgba(250,204,21,0.1)]">
       <div className="flex items-start gap-3">
         <img
           src={avatar}

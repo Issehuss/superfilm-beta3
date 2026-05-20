@@ -1131,7 +1131,7 @@ const themeStyle = useMemo(() => getThemeVars(themeId), [themeId]);
                 className={
                   isPremiumProfile
                     ? "absolute inset-0 rounded-full themed-outline forge opacity-90 border border-transparent shadow-none"
-                    : "absolute inset-0 rounded-full bg-[radial-gradient(circle_at_30%_20%,rgba(255,215,0,0.28),rgba(0,0,0,0.9))] opacity-70 pointer-events-none"
+                    : "absolute inset-0 rounded-full bg-[radial-gradient(circle_at_30%_20%,rgba(250,204,21,0.28),rgba(0,0,0,0.9))] opacity-70 pointer-events-none"
                 }
               />
               <img
